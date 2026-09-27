@@ -32,3 +32,18 @@ if svar_tall == a + b:
     print("Riktig!")
 else:
     print(f"Feil - riktig svar var {a + b}")
+
+
+    
+
+# Øvelse 1: File to List Converter
+filnavn = input("Hvilken fil vil du lese? ")
+try:
+    with open(filnavn, "r") as fil:     # åpne fila for lesing
+        linjer = fil.readlines()        # les alle linjer inn i en liste
+    reine = []
+    for linje in linjer:
+        reine.append(linje.strip())     # strip() fjerner mellomrom/linjeskift
+    print(reine)
+except FileNotFoundError:               # hvis fila ikke finnes
+    print("Fant ikke den fila.")
