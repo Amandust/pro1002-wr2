@@ -12,3 +12,23 @@ for bit in biter:
 
 print("Tall-lista:", tall)          # debug
 print("Summen er:", sum(tall))
+
+
+# Øvelse 4: Math Quiz with Exception Handling
+import random
+
+a = random.randint(1, 10)
+b = random.randint(1, 10)
+
+while True:
+    svar = input(f"Hva er {a} + {b}? ")
+    try:
+        svar_tall = int(svar)        # gyldig tall? da hopper vi ut
+        break
+    except ValueError:
+        print("Skriv et tall, er du snill!")
+
+if svar_tall == a + b:
+    print("Riktig!")
+else:
+    print(f"Feil - riktig svar var {a + b}")
