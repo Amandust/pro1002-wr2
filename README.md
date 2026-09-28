@@ -9,3 +9,11 @@ mulig å følge hvorfor ting ble endret, og å jobbe parallelt uten å tråkke
 på hverandre. Par- og mob-programmering og peer review sprer kunnskap, så
 ingen sitter aleine med ansvaret for én del. Til sammen gjør dette at koden
 eies av teamet, ikke av enkeltpersoner.
+
+
+## Slik kjører du koden
+
+1. Sørg for at Python er installert
+2. Åpne terminalen i mappa der `wr2.py` ligger
+3. Kjør: `python wr2.py`
+4. Følg det som står i terminalen (skriv inn tall, svar på quizen, oppgi et filnavn)
